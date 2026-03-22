@@ -1,14 +1,13 @@
-# Ресурсы для изучения турецкого языка
+# Resources for learning Turkish
 
-## Словари и справочники
+## Dictionaries and reference works
 
-## Онлайн-ресурсы
+## Online resources
 
-## Приложения для изучения языка
+## Language-learning apps
 
-## Фильмы и сериалы
+## Films and series
 
-## Музыка и подкасты
+## Music and podcasts
 
-## Литература для чтения
-
+## Reading

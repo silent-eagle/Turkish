@@ -1,12 +1,11 @@
-# Проверочные задания
+# Exercises and tests
 
-В этом разделе находятся проверочные задания для контроля знаний.
+This folder contains exercises and tests for checking what you have learned.
 
-## Структура
+## Contents
 
-- **Тесты по грамматике** - тесты на проверку грамматических знаний
-- **Упражнения на лексику** - задания для расширения словарного запаса
-- **Аудирование** - задания на понимание устной речи
-- **Письменные задания** - упражнения для развития письменной речи
-- **Устные задания** - задания для развития навыков говорения
-
+- **Grammar tests** — checking grammar knowledge
+- **Vocabulary exercises** — tasks for expanding vocabulary
+- **Listening** — understanding spoken Turkish
+- **Writing** — exercises for writing skills
+- **Speaking** — tasks for oral fluency

@@ -1,53 +1,58 @@
-# Методическое пособие по изучению турецкого языка
+# Turkish language study guide
 
-## Описание
+## Description
 
-Данное методическое пособие предназначено для интенсивного изучения турецкого языка русскоязычными студентами с нулевого уровня до уровня, достаточного для свободного общения с носителями языка в устной и письменной форме.
+This study guide supports intensive Turkish for Russian-speaking learners from zero to a level sufficient for comfortable spoken and written communication with native speakers.
 
-## Цель обучения
+## Learning goals
 
-По завершении 3-месячного курса студент должен уметь:
-- Вести разговорную речь на бытовые и общие темы
-- Понимать речь носителей языка в повседневных ситуациях
-- Писать тексты на турецком языке (сообщения, письма, простые эссе)
-- Читать и понимать тексты средней сложности
-- Использовать грамматические конструкции в речи и письме
+After completing the 3-month course, the learner should be able to:
 
-## Структура пособия
+- Hold conversational Turkish on everyday and general topics
+- Understand native speakers in typical situations
+- Write in Turkish (messages, letters, short essays)
+- Read and understand texts of moderate difficulty
+- Use grammar patterns in speech and writing
 
-- **[Содержание](content.md)** - полное содержание методического пособия
-- **[План обучения](plan.md)** - детальный план на 3 месяца интенсивного изучения
-- **[Страница прогресса](progress.md)** - ежедневное отслеживание выполнения плана
-- **[Месяц 1](month-01/)** - основы турецкого языка
-- **[Месяц 2](month-02/)** - развитие навыков общения
-- **[Месяц 3](month-03/)** - углубление и практика
-- **[Проверочные задания](exercises/)** - тесты и упражнения для контроля знаний
-- **[Ресурсы](resources/)** - дополнительные материалы и ресурсы
+## Repository structure
 
-## Методические подходы
+- **[Table of contents](content.md)** — full outline of the guide
+- **[Study plan](plan.md)** — detailed 3-month intensive plan
+- **[Progress log](progress.md)** — daily tracking of the plan
+- **[Month 1](month-01/)** — Turkish basics
+- **[Month 2](month-02/)** — developing communication skills
+- **[Month 3](month-03/)** — deepening and practice
+- **[Exercises](exercises/)** — tests and exercises for review — see [exercises/README.md](exercises/README.md)
+- **[Resources](resources/)** — extra materials — see [resources/README.md](resources/README.md)
 
-Пособие использует комплексный подход, включающий:
-- Коммуникативный метод
-- Структурно-функциональный подход
-- Аудиолингвальный метод
-- Метод полного погружения
-- Интеграцию современных технологий
+### Project documentation
 
-## Как использовать пособие
+- **[Web app (local course viewer & progress)](docs/web-app.md)** — Node.js + React app for browsing the course and tracking progress
 
-1. Изучите [план обучения](plan.md) для понимания структуры курса
-2. Начните вести [страницу прогресса](progress.md) для отслеживания ежедневных занятий
-3. Следуйте главам по порядку в соответствии с планом
-4. Выполняйте проверочные задания после каждой темы
-5. Используйте дополнительные ресурсы для закрепления материала
-6. Практикуйте язык ежедневно минимум 2-3 часа
-7. Регулярно отмечайте выполнение заданий в странице прогресса
+## Teaching approach
 
-## Требования к студенту
+The guide uses a combined approach:
 
-- Ежедневные занятия (2-3 часа в день)
-- Выполнение всех упражнений
-- Регулярная практика говорения
-- Работа с аудиоматериалами
-- Ведение словаря и грамматических заметок
+- Communicative method
+- Structural–functional approach
+- Audiolingual method
+- Full immersion where possible
+- Integration of modern tools (including the optional web app)
 
+## How to use the guide
+
+1. Read the [study plan](plan.md) to understand the course structure
+2. Start a [progress log](progress.md) for daily work
+3. Follow chapters in order according to the plan
+4. Complete the exercises after each topic
+5. Use [additional resources](resources/README.md) to reinforce material
+6. Practice daily for at least 2–3 hours
+7. Update your progress log regularly
+
+## Expectations for the learner
+
+- Daily study (2–3 hours per day)
+- Completing the exercises
+- Regular speaking practice
+- Work with audio materials
+- Keeping a vocabulary and grammar notes

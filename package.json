@@ -1,0 +1,20 @@
+{
+  "name": "turkish-course",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run build -w @turkish/shared && concurrently -n api,web -c blue,green \"npm run dev -w @turkish/api\" \"npm run dev -w @turkish/web\"",
+    "build": "npm run build -w @turkish/shared && npm run build -w @turkish/api && npm run build -w @turkish/web",
+    "start": "npm run start -w @turkish/api"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "typescript": "^5.7.3"
+  }
+}
