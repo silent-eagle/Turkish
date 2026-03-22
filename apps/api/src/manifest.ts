@@ -4,14 +4,14 @@ import fg from "fast-glob";
 import type { ContentItem, ContentKind, ManifestResponse } from "@turkish/shared";
 
 function kindFromPath(rel: string): ContentKind {
-  if (rel.startsWith("month-")) return "chapter";
-  if (rel.startsWith("exercises/")) return "exercise";
-  if (rel.startsWith("resources/")) return "resource";
+  if (rel.startsWith("course/month-")) return "chapter";
+  if (rel.startsWith("course/exercises/")) return "exercise";
+  if (rel.startsWith("course/resources/")) return "resource";
   return "resource";
 }
 
 function monthFromPath(rel: string): string | undefined {
-  const m = /^month-(\d+)/.exec(rel);
+  const m = /^course\/month-(\d+)/.exec(rel);
   return m ? `month-${m[1]}` : undefined;
 }
 
@@ -26,7 +26,12 @@ async function firstHeadingTitle(absPath: string, fallback: string): Promise<str
 }
 
 export async function buildManifest(contentRoot: string): Promise<ManifestResponse> {
-  const patterns = ["month-*/chapter-*.md", "exercises/*.md", "resources/*.md"];
+  const patterns = [
+    "course/month-*/chapter-*.md",
+    "course/exercises/*.md",
+    "course/resources/*.md",
+    "course/{content,plan,progress,development-plan}.md",
+  ];
   const entries = await fg(patterns, {
     cwd: contentRoot,
     onlyFiles: true,

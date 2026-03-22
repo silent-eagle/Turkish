@@ -1,4 +1,4 @@
-/** Parses exercises/grammar-tests.md into structured tests for the interactive UI. */
+/** Parses course/exercises/grammar-tests.md into structured tests for the interactive UI. */
 
 export type McqOption = { key: string; text: string };
 

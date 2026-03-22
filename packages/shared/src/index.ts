@@ -2,7 +2,7 @@ export type ContentKind = "chapter" | "exercise" | "resource";
 
 export interface ContentItem {
   id: string;
-  /** Relative path without leading slash, e.g. month-01/chapter-01-01.md */
+  /** Relative path without leading slash, e.g. course/month-01/chapter-01-01.md */
   path: string;
   title: string;
   kind: ContentKind;

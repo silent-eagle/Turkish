@@ -12,7 +12,7 @@ Stack: **Node.js (Express)** API + **React (Vite) + TypeScript** SPA, **SQLite**
 | Variable | Purpose | Default |
 |----------|---------|---------|
 | `PORT` | API HTTP port | `3001` |
-| `CONTENT_ROOT` | Absolute path to the folder containing `month-01/`, `exercises/`, `resources/` | Parent of `apps/` (repo root when running from a built `apps/api`) |
+| `CONTENT_ROOT` | Absolute path to the repo root (must contain **`course/`** with chapters, `exercises/`, `resources/`, and root-level files such as `content.md`, `plan.md`, `progress.md`, `development-plan.md`) | Parent of `apps/` (repo root when running from a built `apps/api`) |
 | `DATABASE_PATH` | SQLite database file | `<CONTENT_ROOT>/data/app.db` |
 | `SERVE_STATIC` | Set to `0` to disable serving the built SPA from the API (API-only mode) | enabled when `apps/web/dist` exists |
 
@@ -48,7 +48,8 @@ CONTENT_ROOT=/path/to/turkish npm start
 ## Data and backups
 
 - **Progress** lives in the SQLite file at `DATABASE_PATH` (default `data/app.db` under `CONTENT_ROOT`).
-- **Course content** is plain Markdown in Git; back up the repo and the SQLite file.
+- **Course content** is plain Markdown under `course/` in Git; back up the repo and the SQLite file.
+- **Content IDs** in the API and progress DB are paths without `.md`, e.g. `course/month-01/chapter-01-01` and `course/exercises/grammar-tests`. If you had an older database from before content lived under `course/`, those rows no longer match — delete `data/app.db` or clear the `progress` table and start fresh.
 - To reset progress, stop the server and delete `data/app.db` (or only the `progress` table).
 
 ## Troubleshooting
@@ -66,6 +67,6 @@ The app has **no authentication**. Run it on a trusted network, bind to `127.0.0
 - `GET /api/health` — liveness / paths in use
 - `GET /api/manifest` — indexed chapters, exercises, resources
 - `POST /api/manifest/refresh` — rebuild manifest cache after content edits
-- `GET /api/content/:id` — raw Markdown (`id` is URL-encoded path without `.md`, e.g. `month-01%2Fchapter-01-01`)
+- `GET /api/content/:id` — raw Markdown (`id` is URL-encoded path without `.md`, e.g. `course%2Fmonth-01%2Fchapter-01-01`)
 - `GET /api/progress` — all progress rows
 - `PATCH /api/progress/:contentId` — JSON body: `{ "status"?, "notes"?, "touch"? }`. The bundled UI only sends `status` when you use the toolbar buttons and `notes` when you blur the notes field; it does **not** auto-update status on page load. Optional `touch` updates `last_opened_at` and can move `not_started` → `in_progress` if you call the API yourself.

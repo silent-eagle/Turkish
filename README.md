@@ -32,14 +32,17 @@ After completing the 3-month course, the learner should be able to:
 
 ## Repository structure (course content)
 
-- **[Table of contents](content.md)** — full outline of the guide
-- **[Study plan](plan.md)** — detailed 3-month intensive plan
-- **[Progress log](progress.md)** — printable / manual daily tracking (optional if you use the app’s progress)
-- **[Month 1](month-01/)** — Turkish basics
-- **[Month 2](month-02/)** — developing communication skills
-- **[Month 3](month-03/)** — deepening and practice
-- **[Exercises](exercises/)** — tests and exercises — see [exercises/README.md](exercises/README.md)
-- **[Resources](resources/)** — extra materials — see [resources/README.md](resources/README.md)
+All study materials and planning docs live under **[`course/`](course/)**.
+
+- **[Table of contents](course/content.md)** — full outline of the guide
+- **[Study plan](course/plan.md)** — detailed 3-month intensive plan
+- **[Progress log](course/progress.md)** — printable / manual daily tracking (optional if you use the app’s progress)
+- **[Development plan](course/development-plan.md)** — implementation / tooling notes for this repo (optional)
+- **[Month 1](course/month-01/)** — Turkish basics
+- **[Month 2](course/month-02/)** — developing communication skills
+- **[Month 3](course/month-03/)** — deepening and practice
+- **[Exercises](course/exercises/)** — tests and exercises — see [course/exercises/README.md](course/exercises/README.md)
+- **[Resources](course/resources/)** — extra materials — see [course/resources/README.md](course/resources/README.md)
 
 ## Teaching approach
 
@@ -54,10 +57,10 @@ The guide uses a combined approach:
 ## How to use the guide
 
 1. **Run the [web app](docs/web-app.md)** and use the course map to open chapters and exercises in order.
-2. Mark sections complete and add notes in the app as you go (or keep [progress.md](progress.md) if you want a paper-style log in parallel).
-3. Read [plan.md](plan.md) whenever you need the big-picture schedule.
+2. Mark sections complete and add notes in the app as you go (or keep [course/progress.md](course/progress.md) if you want a paper-style log in parallel).
+3. Read [course/plan.md](course/plan.md) whenever you need the big-picture schedule.
 4. Complete exercises after each topic; interactive items are scored in the app where supported.
-5. Use [additional resources](resources/README.md) to reinforce material.
+5. Use [additional resources](course/resources/README.md) to reinforce material.
 6. Practice daily for at least 2–3 hours.
 
 ## Expectations for the learner

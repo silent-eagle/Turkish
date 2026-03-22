@@ -108,9 +108,9 @@ export function ReaderPage() {
       />
       {saveNotes.isPending ? <p className="muted">{ui.reader.savingNotes}</p> : null}
 
-      {id === "exercises/grammar-tests" ? (
+      {id === "course/exercises/grammar-tests" ? (
         <GrammarTestsView markdown={md.data ?? ""} contentId={id} />
-      ) : id === "exercises/vocabulary-exercises" ? (
+      ) : id === "course/exercises/vocabulary-exercises" ? (
         <VocabularyExercisesView markdown={md.data ?? ""} contentId={id} />
       ) : (
         <MarkdownView markdown={md.data ?? ""} />

@@ -55,7 +55,7 @@ app.post("/api/manifest/refresh", async (_req, res, next) => {
   }
 });
 
-/** GET raw markdown for a content id (path without .md), e.g. month-01/chapter-01-01 */
+/** GET raw markdown for a content id (path without .md), e.g. course/month-01/chapter-01-01 */
 app.get("/api/content/:id", async (req, res, next) => {
   try {
     const id = decodeURIComponent(req.params.id);
